@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html class="html">
+<head>
+    @if(Session.Count == 1){ 
+    <div>
+         @Html.ActionLink("Home","Index","HomeLogin")
+         @Html.ActionLink("Sair","Index","ValidarUsuario")
+       
+         
+
+        
+    </div>
+    }
+</head>
+<body class="body">
+
+
+
+</body>
+
+
+
+
+</html>
+

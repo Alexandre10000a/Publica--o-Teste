@@ -1,0 +1,10 @@
+﻿@model TesteMVC.Cliente
+@{
+    ViewBag.Title = "CadastrarCliente";
+}
+
+<h2>Cadastrado efetuado com sucesso</h2>
+
+
+
+@Html.ActionLink("Gerar Venda","Index","ContasReceber", new {id_cliente= @Model.id_cliente},null)

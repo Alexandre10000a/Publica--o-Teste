@@ -1,0 +1,91 @@
+﻿@model TesteMVC.Contas_a_Pagar
+@{
+    
+ViewBag.Title = "Index";
+}
+
+<h2>Contas À Pagar</h2>
+
+
+
+    @using (@Html.BeginForm("ContasAPagar", "ContasPagar", "POST")) 
+    {
+        @Html.ValidationSummary(true)
+
+        <fieldset>
+            <legend>Dados da Venda</legend>
+
+            <div class="editor-label">
+
+                @Html.LabelFor(m => m.data_pagamento, "Data Agendamento")
+                
+            </div>
+            <div class="editor-field">
+
+                @Html.EditorFor(m => m.data_pagamento)
+                @Html.ValidationMessageFor(m => m.data_pagamento)
+            </div>
+
+       
+            <div class="editor-label">
+
+                @Html.LabelFor(m => m.descricao, "Descrição")
+            </div>
+            <div class="editor-field">
+
+                @Html.EditorFor(m => m.descricao)
+                @Html.ValidationMessageFor(m => m.descricao)
+            </div>
+
+          
+
+            <div class="editor-label">
+
+                @Html.LabelFor(m => m.valor_a_pagar, "Valor do Pagamento")
+                
+            </div>
+            <div class="editor-field">
+
+                @Html.EditorFor(m => m.valor_a_pagar)
+                @Html.ValidationMessageFor(m => m.valor_a_pagar)
+            </div>
+
+
+@*             <div class="editor-label">
+
+                @Html.LabelFor(m => m.data_valor_pago, "Data do Pagamento Efetuado")
+            </div>
+            <div class="editor-field">
+
+                @Html.EditorFor(m => m.data_valor_pago)
+                @Html.ValidationMessageFor(m => m.data_valor_pago)
+            </div>
+
+          
+
+            <div class="editor-label">
+
+                @Html.LabelFor(m => m.valor_pago, "Valor Pago")
+                
+            </div>
+            <div class="editor-field">
+
+                @Html.EditorFor(m => m.valor_pago)
+                @Html.ValidationMessageFor(m => m.valor_pago)
+            </div>*@
+
+
+            <div>
+            <p><input type="submit" value="Cadastrar" /></p>
+            </div>
+            
+     
+     
+            </fieldset>
+}
+ 
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

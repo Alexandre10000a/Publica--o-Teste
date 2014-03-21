@@ -1,0 +1,39 @@
+﻿@model TesteMVC.Usuarios
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Olá Bem-Vindo a Página Inicial</h2>
+<fieldset>
+    <legend>Início</legend>
+
+@Html.ActionLink("Cadastrar Cliente","Index","CadastroCliente")
+@Html.ActionLink("Cadastrar Endereço","Index","CadastrarEnderecoCliente")
+@Html.ActionLink("Status Cliente","Index","StatusCliente")
+@Html.ActionLink("Gerar Venda","Index","GerarVenda")
+<p></p>
+@Html.ActionLink("Cadastrar Fornecedor","Index","CadastroFornecedor")
+@Html.ActionLink("Cadastrar Endereco Fornecedor","Index","CadastrarEnderecoFornecedor")
+@Html.ActionLink("Status Fornecedor","Index","StatusFornecedor")
+@Html.ActionLink("Gerar Compra","Index","GerarCompra")
+<p></p>
+@Html.ActionLink("Quitar Pagamento","Index","QuitarPagamento")
+@Html.ActionLink("Receber Pagamento","Index","ReceberPagamento")
+<p></p>
+@Html.ActionLink("Relatório de Recebimento","Index","RelatorioRecebimento")
+@Html.ActionLink("Relatório de Pagamento","Index","RelatorioPagamento")
+<p></p>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
